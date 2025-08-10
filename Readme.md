@@ -6,4 +6,7 @@ Defer ->
 Debugger ->
 Temporal dead zone ->
 Template literals ->
-
+JS math obj ->
+alert ->
+prompt ->
+confirm ->
