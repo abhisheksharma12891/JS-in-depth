@@ -277,3 +277,70 @@ if (!isRaining) {
 }
 
 
+// ------------------ DECIDION MAKING USING IF STATEMENT IN JAVASCRIPT ------------------
+const username = prompt('Pls enter ur name');
+const userAge = prompt('Pls enter ur age');
+
+console.log(`Name:  ${username}`)
+console.log(`Age : ${userAge}`)
+
+if (userAge >= 0 && userAge < 18)
+  {
+    console.log('You are a child u can not work');
+  }
+else if (userAge >= 18 && userAge < 65)
+  {
+    console.log('You are an adult u can work');
+  }
+else if (userAge >= 66)
+  {
+    console.log('You are an old u can not work');
+  }
+else
+  {
+    console.log('You are not born yet');
+  }
+
+
+// ------------------ SWITCH CASE IN JS ------------------
+
+const dayNum = prompt('Pls enter no. of Day');
+
+switch (dayNum) {
+  case '1':
+    console.log('Sunday');
+    break;
+  case '2':
+    console.log('Monday');
+    break;
+  case '3':
+    console.log('Tuesday');
+    break;
+  case '4':
+    console.log('Wednesday');
+    break;
+  case '5':
+    console.log('Thursday');
+    break;
+  case '6':
+    console.log('Friday');
+    break;
+  case '7':
+    console.log('Saturday');
+    break;
+  default:
+    console.log('Invalid Day');
+}
+
+
+// ------------------ TERNARY OPERATOR ------------------
+// Example: Check if a number is even or odd
+const number = prompt('Pls enter no.');
+
+const result = (number % 2 === 0) ? "Even" : "Odd";
+
+console.log(number + ' is '  + result + ' ' + 'number');
+
+
+
+
