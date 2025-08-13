@@ -342,5 +342,17 @@ const result = (number % 2 === 0) ? "Even" : "Odd";
 console.log(number + ' is '  + result + ' ' + 'number');
 
 
+// ------------------ OBJECT ------------------
+const user = { firstName : 'Abhishek', lastName : 'Sharma', age : 21, isMarried : false };
+console.log(user.firstName);
+console.log(user.lastName);
+console.log(user.age);
+console.log(user.isMarried);
+console.log(user['firstName']);
+console.log(user['lastName']);
+console.log(user['age']);
+console.log(user['isMarried']);
+
+
 
 
