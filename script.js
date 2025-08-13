@@ -344,6 +344,7 @@ console.log(number + ' is '  + result + ' ' + 'number');
 
 // ------------------ OBJECT ------------------
 const user1 = { firstName : 'Abhishek', lastName : 'Sharma', age : 21, isMarried : false };
+console.log(user1);
 console.log(user1.firstName);
 console.log(user1.lastName);
 console.log(user1.age);
@@ -355,6 +356,7 @@ console.log(user1['isMarried']);
 
 
 const user2 = { firstName : 'Akhilesh', lastName : 'Sharma', age : 19, isMarried : false };
+console.log(user2);
 console.log(user2.firstName);
 console.log(user2.lastName);
 console.log(user2.age);
