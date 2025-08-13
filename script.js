@@ -343,15 +343,29 @@ console.log(number + ' is '  + result + ' ' + 'number');
 
 
 // ------------------ OBJECT ------------------
-const user = { firstName : 'Abhishek', lastName : 'Sharma', age : 21, isMarried : false };
-console.log(user.firstName);
-console.log(user.lastName);
-console.log(user.age);
-console.log(user.isMarried);
-console.log(user['firstName']);
-console.log(user['lastName']);
-console.log(user['age']);
-console.log(user['isMarried']);
+const user1 = { firstName : 'Abhishek', lastName : 'Sharma', age : 21, isMarried : false };
+console.log(user1.firstName);
+console.log(user1.lastName);
+console.log(user1.age);
+console.log(user1.isMarried);
+console.log(user1['firstName']);
+console.log(user1['lastName']);
+console.log(user1['age']);
+console.log(user1['isMarried']);
+
+
+const user2 = { firstName : 'Akhilesh', lastName : 'Sharma', age : 19, isMarried : false };
+console.log(user2.firstName);
+console.log(user2.lastName);
+console.log(user2.age);
+console.log(user2.isMarried);
+console.log(user2['firstName']);
+console.log(user2['lastName']);
+console.log(user2['age']);
+console.log(user2['isMarried']);
+
+console.log(Boolean(user1===user2))
+
 
 
 
