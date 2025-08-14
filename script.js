@@ -436,3 +436,83 @@ let matrix = [
 console.log(matrix[1][2]); // 6
 
 
+// ------------------ ARRAY METHOD IN JS ------------------
+// Adding & Removing Elements
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+// Add at end
+fruits.push("Orange"); 
+console.log(fruits); // ["Apple", "Banana", "Mango", "Orange"]
+
+// Remove from end
+fruits.pop();
+console.log(fruits); // ["Apple", "Banana", "Mango"]
+
+// Add at start
+fruits.unshift("Grapes");
+console.log(fruits); // ["Grapes", "Apple", "Banana", "Mango"]
+
+// Remove from start
+fruits.shift();
+console.log(fruits); // ["Apple", "Banana", "Mango"]
+
+
+// Searching in Array
+console.log(fruits.indexOf("Banana")); // 1
+console.log(fruits.includes("Mango")); // true
+
+
+// Changing / Splicing
+// splice(start, deleteCount, items...)
+fruits.splice(1, 1, "Kiwi"); 
+console.log(fruits); // ["Apple", "Kiwi", "Mango"]
+
+// slice(start, end) → creates copy
+let sliced = fruits.slice(0, 2);
+console.log(sliced); // ["Apple", "Kiwi"]
+
+// Sorting
+let numbers = [4, 1, 5, 2];
+numbers.sort(); // Alphabetically sort (wrong for numbers)
+console.log(numbers); // [1, 2, 4, 5]
+
+// Correct numeric sort
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [1, 2, 4, 5]
+
+numbers.reverse(); // Reverse array
+console.log(numbers); // [5, 4, 2, 1]
+
+// Joining
+let words = ["Hello", "World"];
+console.log(words.join(" ")); // "Hello World"
+
+
+// Looping Methods
+let nums = [1, 2, 3, 4, 5];
+
+// forEach
+nums.forEach(n => console.log(n));
+
+// map → returns new array
+let doubled = nums.map(n => n * 2);
+console.log(doubled); // [2, 4, 6, 8, 10]
+
+// filter → returns new array with condition
+let evens = nums.filter(n => n % 2 === 0);
+console.log(evens); // [2, 4]
+
+// reduce → accumulates to single value
+let sum = nums.reduce((acc, n) => acc + n, 0);
+console.log(sum); // 15
+
+// Combining Arrays
+let a = [1, 2];
+let b = [3, 4];
+let combined = a.concat(b);
+console.log(combined); // [1, 2, 3, 4]
+
+let spreadCombined = [...a, ...b];
+console.log(spreadCombined); // [1, 2, 3, 4]
+
