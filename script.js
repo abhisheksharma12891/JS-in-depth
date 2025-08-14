@@ -369,6 +369,76 @@ console.log(user2['isMarried']);
 console.log(Boolean(user1===user2))
 
 
+// ------------------ ARRAY IN JS ------------------
 
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits); // ["Apple", "Banana", "Mango"]
+
+
+// --Creating Arrays--
+
+// Using array literal
+let numbers = [1, 2, 3, 4, 5];
+
+// Using new Array()
+let cars = new Array("BMW", "Audi", "Tesla");
+
+
+// Accessing Elements
+
+let colors = ["Red", "Green", "Blue"];
+console.log(colors[0]); // Red
+console.log(colors[2]); // Blue
+
+
+// Changing Elements
+
+colors[1] = "Yellow";
+console.log(colors); // ["Red", "Yellow", "Blue"]
+
+
+// Array Properties
+ 
+console.log(colors.length); // 3
+
+
+//  Common Array Methods
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.push("Orange");   // Add at end
+fruits.pop();            // Remove from end
+fruits.unshift("Grapes");// Add at start
+fruits.shift();          // Remove from start
+
+console.log(fruits.indexOf("Banana")); // Find index
+console.log(fruits.includes("Mango")); // true
+console.log(fruits.sort());            // Sort array
+console.log(fruits.reverse());         // Reverse array
+
+
+// Looping through Arrays
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+// Using for loop
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+// Using for...of
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
+
+// Multi-dimensional Arrays
+
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+console.log(matrix[1][2]); // 6
 
 
