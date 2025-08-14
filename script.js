@@ -516,3 +516,33 @@ console.log(combined); // [1, 2, 3, 4]
 let spreadCombined = [...a, ...b];
 console.log(spreadCombined); // [1, 2, 3, 4]
 
+
+//concat
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = arr1.concat(arr2);
+console.log(arr3); // [1, 2, 3, 4, 5]
+
+//index
+let arr = ['a', 'b', 'c'];
+console.log(arr.indexOf('b')); // 1
+
+//lastIndexOf
+console.log(arr.lastIndexOf('b')); // 1
+
+//includes
+console.log(arr.includes('b')); // true
+
+//reverse
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.reverse()); // [5, 4, 3, 2, 1]
+//join
+let arr = ['a', 'b', 'c'];
+console.log(arr.join('')); // "abc"
+
+//sort
+let arr = [4, 2, 7, 1];
+console.log(arr.sort((a, b) => a - b)); // [1, 2]
+
+
+
