@@ -385,25 +385,21 @@ let cars = new Array("BMW", "Audi", "Tesla");
 
 
 // Accessing Elements
-
 let colors = ["Red", "Green", "Blue"];
 console.log(colors[0]); // Red
 console.log(colors[2]); // Blue
 
 
-// Changing Elements
-
+// Changing Element
 colors[1] = "Yellow";
 console.log(colors); // ["Red", "Yellow", "Blue"]
 
 
 // Array Properties
- 
 console.log(colors.length); // 3
 
 
 //  Common Array Methods
-
 let fruits = ["Apple", "Banana", "Mango"];
 
 fruits.push("Orange");   // Add at end
@@ -418,7 +414,6 @@ console.log(fruits.reverse());         // Reverse array
 
 
 // Looping through Arrays
-
 let fruits = ["Apple", "Banana", "Mango"];
 
 // Using for loop
@@ -433,7 +428,6 @@ for(let fruit of fruits){
 
 
 // Multi-dimensional Arrays
-
 let matrix = [
     [1, 2, 3],
     [4, 5, 6],
