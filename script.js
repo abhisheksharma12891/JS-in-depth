@@ -427,14 +427,6 @@ for(let fruit of fruits){
 }
 
 
-// Multi-dimensional Arrays
-let matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-console.log(matrix[1][2]); // 6
-
 
 // ------------------ ARRAY METHOD IN JS ------------------
 // Adding & Removing Elements
@@ -543,6 +535,23 @@ console.log(arr.join('')); // "abc"
 //sort
 let arr = [4, 2, 7, 1];
 console.log(arr.sort((a, b) => a - b)); // [1, 2]
+
+
+// Multi-dimensional Arrays
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+console.log(matrix[1][2]); // 6
+let arr = [
+  ['a','b','c','d'],
+  ['e','f','g','h'],
+  ['i','j','k','l'],
+  ['m','n','o','p']
+];
+
+console.log(arr[1][1]) // f
 
 
 
