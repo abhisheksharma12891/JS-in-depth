@@ -554,4 +554,30 @@ let arr = [
 console.log(arr[1][1]) // f
 
 
+// ------------------ Shallow Copy ------------------
+let original = { name: "John", address: { city: "Delhi" } };
+
+// Shallow copy using spread operator
+let shallow = { ...original };
+
+shallow.name = "Mike";        // Changes only in copy
+shallow.address.city = "Mumbai"; // Changes in both (reference shared)
+
+console.log(original); // { name: "John", address: { city: "Mumbai" } }
+console.log(shallow);  // { name: "Mike", address: { city: "Mumbai" } }
+
+
+// ------------------ Deep Copy ------------------
+let original = { name: "John", address: { city: "Delhi" } };
+
+// Deep copy using JSON methods
+let deep = JSON.parse(JSON.stringify(original));
+
+deep.name = "Mike";
+deep.address.city = "Mumbai";
+
+console.log(original); // { name: "John", address: { city: "Delhi" } }
+console.log(deep);     // { name: "Mike", address: { city: "Mumbai" } }
+
+
 
