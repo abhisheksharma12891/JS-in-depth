@@ -10,3 +10,4 @@ JS math obj ->
 alert ->
 prompt ->
 confirm ->
+Shallow Copy and  Deep Copy ->

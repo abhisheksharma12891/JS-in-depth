@@ -580,4 +580,43 @@ console.log(original); // { name: "John", address: { city: "Delhi" } }
 console.log(deep);     // { name: "Mike", address: { city: "Mumbai" } }
 
 
+// ------------------ WHILE LOOP ------------------
+
+// Count from 1 to 5
+let i = 1;
+
+while (i <= 5) {
+  console.log(i);
+  i++; // Increment to avoid infinite loop
+}
+
+
+// Even Numbers
+let num = 2;
+
+while (num <= 10) {
+  console.log(num);
+  num += 2; // Add 2 each time
+}
+
+
+// Infinite Loop Warning
+let x = 1;
+
+while (x > 0) {
+  console.log("This will run forever!");
+}
+
+
+// Using break
+let n = 1;
+
+while (true) {
+  console.log(n);
+  if (n === 5) break; // Exit loop at 5
+  n++;
+}
+
+
+
 
