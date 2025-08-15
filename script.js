@@ -643,6 +643,34 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 
+// ------------------ DO WHILE LOOP ------------------
+// Count 1 to 5
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+// Runs at Least Once Even if Condition is False
+let x = 10;
+
+do {
+  console.log("This will run once");
+  x++;
+} while (x < 5);
+
+// Even Numbers
+let num = 2;
+
+do {
+  console.log(num);
+  num += 2;
+} while (num <= 10);
+
+
+
+
 
 
 
