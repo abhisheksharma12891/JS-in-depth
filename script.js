@@ -668,6 +668,7 @@ do {
   num += 2;
 } while (num <= 10);
 
+// ------------------ COMPOUND ASSIGNMENT OPERATORS ------------------
 // Compound Assignment Operators
 
 let num = 10;
@@ -689,3 +690,58 @@ console.log("After %= 5:", num);
 
 num **= 3; // num = 1^3 = 1
 console.log("After **= 3:", num);
+
+
+// ------------------ FUNCTION ------------------
+// Basic Function
+function greet() {
+    console.log("Hello, World!");
+}
+
+// Calling (executing) the function
+greet(); 
+// Output: Hello, World!
+
+
+// Function with Parameters
+function greetUser(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greetUser("Abhishek");
+greetUser("Sushmita");
+// Output: Hello, Abhishek! and Hello, Sushmita!
+
+// Function with Return Value
+function add(a, b) {
+    return a + b;
+}
+
+let sum = add(5, 3);
+console.log("Sum is:", sum);
+// Output: Sum is: 8
+
+// Function Expression
+const multiply = function(a, b) {
+    return a * b;
+};
+
+console.log(multiply(4, 5)); // 20
+
+
+// Arrow Function (ES6)
+const divide = (a, b) => {
+    return a / b;
+};
+
+console.log(divide(10, 2)); // 5
+
+
+//Practice — Area of Rectangle
+function rectangleArea(h, w) {
+    return h * w;
+}
+
+console.log("Area:", rectangleArea(5, 3));
+
+
