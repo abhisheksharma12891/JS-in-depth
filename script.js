@@ -617,6 +617,32 @@ while (true) {
   n++;
 }
 
+// ------------------ FOR LOOP ------------------
+// Basic For Loop (Count 1 to 5)
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+
+// Reverse Counting
+for (let i = 5; i >= 1; i--) {
+  console.log(i);
+}
+
+// Even Numbers
+for (let num = 2; num <= 10; num += 2) {
+  console.log(num);
+}
+
+// Loop Through Array
+let fruits = ["Apple", "Banana", "Cherry"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+
 
 
 
