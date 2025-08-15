@@ -668,9 +668,24 @@ do {
   num += 2;
 } while (num <= 10);
 
+// Compound Assignment Operators
 
+let num = 10;
 
+num += 5;  // num = 15
+console.log("After += 5:", num);
 
+num -= 3;  // num = 12
+console.log("After -= 3:", num);
 
+num *= 2;  // num = 24
+console.log("After *= 2:", num);
 
+num /= 4;  // num = 6
+console.log("After /= 4:", num);
 
+num %= 5;  // num = 1
+console.log("After %= 5:", num);
+
+num **= 3; // num = 1^3 = 1
+console.log("After **= 3:", num);
